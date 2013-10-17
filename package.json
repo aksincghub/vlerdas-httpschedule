@@ -1,0 +1,27 @@
+{
+  "name": "httpschedule",
+  "version": "0.1.0",
+  "description": "Schedule a HTTP Call",
+  "keywords": [
+    "cron",
+    "schedule",
+    "http",
+  ],
+  "author": "Julian Jewel <julian@julianjewel.com>",
+  "main": "./schedule.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "dependencies": {
+    "config": ">=0.4.30",
+	"cron": ">=1.0.1",
+	"request":"2.27.0",
+	"time":"0.9.2"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/department-of-veterans-affairs/vlerdas-httpschedule.git"
+  }
+}
