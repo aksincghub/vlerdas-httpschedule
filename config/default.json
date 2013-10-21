@@ -1,7 +1,26 @@
 {
 	"schedule" : "* * * * *",
-	"uri" : "http://localhost:3001/core/serviceTreatmentRecords.subscriptions/async/core.subscriptions.llfd?query={%22log.document.o.case:ServiceTreatmentRecord.case:CommonData.nc:Document.nc:DocumentStatus.nc:StatusText%22:%22Certified%22}",
+	"request" : {
+		"uri" : "http://localhost:3001/core/serviceTreatmentRecords.subscriptions/async/core.subscriptions.llfd?query={%22log.document.o.case:ServiceTreatmentRecord.case:CommonData.nc:Document.nc:DocumentStatus.nc:StatusText%22:%22Certified%22}",
+		"headers" : {
+			"Accept":"application/xml"
+		}
+	},
 	"start" : true,
 	"timeZone" : "America/Los_Angeles",
-	"debug" : true
+	"log" : {
+		"console" : {
+			"level" : "trace",
+			"colorize" : true,
+			"label": "LLFDSTR_SCHEDULE", 
+			"timestamp": true
+		}
+	},
+	"retry": {
+		 "retries": 5,
+		 "factor": 3,
+		 "minTimeout": 1000,
+		 "maxTimeout": 60000,
+		 "randomize": true
+	}
 }

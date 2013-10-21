@@ -1,11 +1,11 @@
 {
   "name": "httpschedule",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Schedule a HTTP Call",
   "keywords": [
     "cron",
     "schedule",
-    "http",
+    "http"
   ],
   "author": "Julian Jewel <julian@julianjewel.com>",
   "main": "./schedule.js",
@@ -16,7 +16,10 @@
     "config": ">=0.4.30",
 	"cron": ">=1.0.1",
 	"request":"2.27.0",
-	"time":"0.9.2"
+	"time":"0.9.2",
+	"winston":"0.7.2",
+	"retry":"0.6.0",
+	"vcommons":"0.1.8"
   },
   "devDependencies": {
   },
