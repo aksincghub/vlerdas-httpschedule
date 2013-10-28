@@ -1,7 +1,7 @@
 {
 	"schedule" : "* * * * *",
 	"request" : {
-		"uri" : "http://localhost:3001/core/serviceTreatmentRecords.subscriptions/async/core.subscriptions.llfd?query={%22log.document.o.case:ServiceTreatmentRecord.case:CommonData.nc:Document.nc:DocumentStatus.nc:StatusText%22:%22Certified%22}",
+		"uri" : "http://localhost:3001/ecrud/v1/core/serviceTreatmentRecords.subscriptions/async/core.str.sync?query={%22log.document.o.case:ServiceTreatmentRecord.case:CommonData.nc:Document.nc:DocumentStatus.nc:StatusText%22:{%22$ne%22:%22Certified%22}}&fields={%22_id%22:0,%20%22subscription:Subscription%22:1}",
 		"headers" : {
 			"Accept":"application/xml"
 		}
@@ -12,7 +12,7 @@
 		"console" : {
 			"level" : "trace",
 			"colorize" : true,
-			"label": "LLFDSTR_SCHEDULE", 
+			"label": "CERTSTR_SCHEDULE", 
 			"timestamp": true
 		}
 	},
