@@ -62,6 +62,7 @@ try {
 // Default exception handler
 process.on('uncaughtException', function (err) {
 	logger.error("Caught Exception " + err);
+	process.exit();
 });
 
 process.on('SIGINT', function () {

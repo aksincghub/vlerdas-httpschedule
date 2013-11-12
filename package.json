@@ -1,6 +1,6 @@
 {
   "name": "httpschedule",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Schedule a HTTP Call",
   "keywords": [
     "cron",
@@ -19,7 +19,7 @@
 	"time":"0.9.2",
 	"winston":"0.7.2",
 	"retry":"0.6.0",
-	"vcommons":"0.1.9"
+	"vcommons":"0.1.10"
   },
   "devDependencies": {
   },
